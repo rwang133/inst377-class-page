@@ -1,2 +1,2 @@
-# inst377-class-page
-A class page with three tabs: home, stocks, and dogs.
+# Description
+A class page with three tabs: home, stocks, and dogs. The stocks page displays stock prices given a ticker and time period, as well as how the top five stocks are doing. A bull or bear icon represents the sentiment. The dogs page contains a carousel for ten random dog images. Clicking on the buttons will also display information about the associated dog breed. The option to explore the site using audio is also available, and instructions for this are listed on the bottom of each page.
