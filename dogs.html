@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dogs</title>
+    <link rel="stylesheet" href="dogsStyle.css">
+    <link rel="stylesheet" href="consistent.css">
+  </head>
+  <!-- Header -->
+  <header class="bar">
+    <h1>INST377 - Dogs</h1>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav id="main-nav">
+    <ul>
+      <a href="home.html"><li>Home</li></a>
+      <a href="stocks.html"><li>Stocks</li></a>
+      <a href="dogs.html"><li>Dogs</li></a>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <h1>Doggos!</h1>
+
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <br>
+  <div id="dogButtons"></div>
+  <br>
+  <div id="breedInfo"></div>
+  <br>
+
+    <div id="audioBox">
+        <h1>Here are the instructions for how to navigate this site using audio:</h1>
+        <p>Please ensure that your mic is on! ₍ᐢ. ̫.ᐢ₎ ₊˚⊹♡</p>
+        <ul>
+            <li>To load a specific dog breed</li>
+            <ul>
+              <li>Say: "Load dog breed &lt;dog breed name&gt;"</li>
+            </ul>
+            <li>To navigate to a different page</li>
+            <ul>
+                <li>Say: "Navigate to &lt;page&gt;"</li>
+            </ul>
+            <li>To change the page color</li>
+            <ul>
+                <li>Say: "Change the color to &lt;color&gt;"</li>
+            </ul>
+            <li>To alert "Hello" back to you</li>
+            <ul>
+                <li>Say: "Hello"</li>
+            </ul>
+        </ul>
+        <button class="button-54" id="turnOn" onclick="turnOnListening();">Turn On Listening</button>
+        <button class="button-54" id="turnOff" onclick="turnOffListening();">Turn Off Listening</button>
+    </div>
+  </div>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/annyang@3/dist/annyang.iife.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="dogsScript.js"></script>

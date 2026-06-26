@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Stocks</title>
+    <link rel="stylesheet" href="stocksStyle.css">
+    <link rel="stylesheet" href="consistent.css">
+  </head>
+
+  <!-- Header -->
+  <header class="bar">
+    <h1>INST377 - Stocks</h1>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav id="main-nav">
+    <ul>
+      <a href="home.html"><li>Home</li></a>
+      <a href="stocks.html"><li>Stocks</li></a>
+      <a href="dogs.html"><li>Dogs</li></a>
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <h1>Let's chart some stocks!</h1>
+    <form id="stocksForm" onsubmit="searchStocks(); return false;">
+        <input id="ticker" type="text" maxlength="5" size="5" required>
+        <br>
+        <select id="days">
+            <option value="30D">30 days</option>
+            <option value="60D">60 days</option>
+            <option value="90D">90 days</option>
+        </select>
+        <br><br>
+        <input class="button-54" type="submit" value="Lookup!">
+    </form>
+    <br>
+
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    <br>
+
+    <table id="top5">
+      <tr>
+        <th>Ticker</th>
+        <th>Comment Count</th>
+        <th>Sentiment</th>
+      </tr>
+    </table>
+    <br>
+
+    <div id="audioBox">
+        <h1>Here are the instructions for how to navigate this site using audio:</h1>
+        <p>Please ensure that your mic is on! ₍ᐢ. ̫.ᐢ₎ ₊˚⊹♡</p>
+        <ul>
+            <li>To lookup a stock</li>
+            <ul>
+                <li>Say: "Lookup &lt;stock ticker&gt;"</li>
+            </ul>
+            <li>To navigate to a different page</li>
+            <ul>
+                <li>Say: "Navigate to &lt;page&gt;"</li>
+            </ul>
+            <li>To change the page color</li>
+            <ul>
+                <li>Say: "Change the color to &lt;color&gt;"</li>
+            </ul>
+            <li>To alert "Hello" back to you</li>
+            <ul>
+                <li>Say: "Hello"</li>
+            </ul>
+        </ul>
+        <button class="button-54" id="turnOn" onclick="turnOnListening();">Turn On Listening</button>
+        <button class="button-54" id="turnOff" onclick="turnOffListening();">Turn Off Listening</button>
+    </div>
+  </div>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/annyang@3/dist/annyang.iife.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="stocksScript.js"></script>

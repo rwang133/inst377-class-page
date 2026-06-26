@@ -1,0 +1,41 @@
+body {
+    background-color: lavender;
+}
+
+table, canvas, input[type=text] {
+    border: 0.1rem solid black;
+}
+
+canvas {
+    background-color: mintcream;
+    visibility: hidden;
+}
+
+table, canvas {
+    padding: 1rem;
+}
+
+table {
+    background-color: lightcyan;
+}
+
+input[type=submit] {
+    background-color: aquamarine;
+}
+
+input[type=text], select {
+  font-family: monospace;
+  font-size: larger;
+  cursor: pointer;
+  border: 0.1rem solid;
+  padding: 0.25em 0.5em;
+  background-color: aliceblue;
+}
+
+input, select {
+    margin: 0.2rem;
+}
+
+input[type=text]:focus, select:focus {
+    background-color: mistyrose;
+}
